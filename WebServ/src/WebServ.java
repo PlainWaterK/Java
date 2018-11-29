@@ -8,7 +8,7 @@ public class WebServ {
 		ServerSocket server;
 		Socket client;
 		//设置相对基础路径
-		String base_url="D:/_JJT_Eclipse_Java/WebServ/src/";
+		String base_url="D:/GitHub/Java/WebServ/src/";
 		try{
 			//约定端口号
 			server = new ServerSocket(80); 
