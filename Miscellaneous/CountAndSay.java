@@ -34,6 +34,7 @@ public class CountAndSay{
             tempStr.append(count).append(currentC);
             result=tempStr;
         }
+        
         return result.toString();
     }
 }
