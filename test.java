@@ -25,6 +25,7 @@ class Solution {
         if(index<0)return 0;
         int res1=0,res2=0;
         int MaxCur = lastMaxCur;
+        
         for(int i=index-1;i>0;--i){
             if(prices[i]>prices[i-1]){
                 MaxCur+=prices[i]-prices[i-1];
@@ -33,6 +34,7 @@ class Solution {
                 res2 = earned + MaxCur + MaxProfit(prices, index-1, earned+MaxCur, 0);
             }
         }
+        
         return Math.max(res1, res2);
     }
 }
